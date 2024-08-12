@@ -1,0 +1,18 @@
+  .Montserrat {
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  .desktop-bg-eligibility {
+    background-image: url("../images/Background_Eligibility.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+  
+  .mobile-bg-eligibility {
+    background-image: url("../images/Background_Eligibility.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+  

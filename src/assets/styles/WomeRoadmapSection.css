@@ -1,0 +1,28 @@
+
+.desktop-bg-roadmap {
+    background-image: url("../images/Background_Roadmap.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+  
+.mobile-bg-roadmap {
+    background-image: url("../images/Mobile_Static_Background.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.fadeIn.is-visible {
+    opacity: 1;
+    transform: scale(1);
+    visibility: visible;
+  }
+
+  .fadeIn {
+    opacity: 0;
+    transform: scale(0.1);
+    visibility: hidden;
+    transition: opacity 2s ease-out, transform 2s ease-out;
+    will-change: opacity, visibility;
+  }

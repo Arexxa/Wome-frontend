@@ -1,0 +1,14 @@
+.desktop-bg-benefit {
+    background-image: url("../images/Background_Benefit.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+  
+.mobile-bg-benefit {
+    background-image: url("../images/Mobile_Static_Background.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+  

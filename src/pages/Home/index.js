@@ -1,13 +1,27 @@
 import React from "react";
-import Navbar from "../../components/Navbar";
+
+import WomeGlobeSection from "../WomeGlobeSection";
+import WomeEligibilitySection from "../WomeEligibilitySection";
+import WomeMissionSection from "../WomeMissionSection";
+import WomeBenefitSection from "../WomeBenefitSection";
+import WomeTeamSection from "../WomeTeamSection";
+import WomeRoadmapSection from "../WomeRoadmapSection";
+import Footer from "../../components/Footer";
 
 function Home() {
   return (
-    <div className="w-full h-screen flex flex-col justify-start ">
-      <Navbar />
-      <div className="flex flex-col justify-center items-center h-full">
-        <div className="text-6xl text-primary">Home Page</div>
+    <div className="flex flex-col">
+     
+      <WomeGlobeSection />
+      <WomeEligibilitySection />
+      <WomeMissionSection />
+      <WomeBenefitSection />
+      <WomeTeamSection />
+      <div className='desktop-bg-roadmap-footer'>
+        <WomeRoadmapSection />
+        <Footer />
       </div>
+      
     </div>
   );
 }

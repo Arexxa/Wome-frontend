@@ -1,0 +1,148 @@
+.content1 {
+  position: relative;
+  /* min-height: 100vh; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: white;
+  overflow: hidden;
+}
+
+.animation-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* overflow: hidden; */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 1;
+}
+
+.slide-text {
+  display: inline-block;
+  white-space: nowrap;
+  margin-bottom: 13rem;
+  animation: slide 20s linear infinite;
+  z-index: 2; /* Ensure text is behind the image */
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-20%);
+  }
+}
+
+.animated-text {
+  font-family: "Librestile", sans-serif;
+  font-size: 80px;
+  font-weight: bold;
+  background: transparent;
+  margin: 0 50px;
+  text-shadow: 2px 2px 0 #DB00FF,
+    -2px -2px 0 #DB00FF, -2px 2px 0 #DB00FF,
+    2px -2px 0 #DB00FF;
+}
+
+.text-content {
+  background-color: #d9e0ec33;
+  position: relative;
+  width: 100%;
+  /* z-index: 3; */
+  margin-top: 16vh;
+}
+
+.helloworld-text {
+  font-family: "Librestile", sans-serif;
+  font-weight: bold;
+  color: hsl(0, 0%, 100%);
+  text-shadow: 2px 2px 0 rgba(161, 161, 161, 1),
+    -2px -2px 0 rgba(161, 161, 161, 1), -2px 2px 0 rgba(161, 161, 161, 1),
+    2px -2px 0 rgba(161, 161, 161, 1);
+  margin: 20px 0;
+}
+
+.Montserrat {
+  font-family: "Montserrat", sans-serif;
+}
+
+.desktop-bg {
+  background-image: url("../images/Background_Landing.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.mobile-bg {
+  background-image: url("../images/Background_Landing.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.animation-container-mobile {
+  width: 120%;
+  height: 40vh; /* Adjusted height for smaller screens */
+  max-height: 60vh; /* Limit maximum height on smaller screens */
+  margin-top: 10vh;
+  background-position: center;
+  position: relative;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+@media (max-width: 640px){
+  .animated-text {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 2560px) {
+  .animated-text {
+    font-size: 4vw; /* Adjust font size for larger screens */
+  }
+
+  .text-content {
+    margin-top: 19vh;
+  }
+
+  .slide-text {
+    margin-bottom: 13rem;
+  }
+}
+
+@media (min-width: 3840px) {
+  .animation-container {
+    margin-top: 10vh; /* Adjust margin for larger screens */
+  }
+
+  .animated-text {
+    font-size: 3vw; /* Adjust font size for larger screens */
+  }
+
+  .helloworld-text {
+    font-size: 6rem; /* Adjust font size for larger screens */
+  }
+}
+
+.floating {  
+  animation-name: floating;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  margin-left: 30px;
+  margin-top: 5px;
+}
+
+@keyframes floating {
+  0% { transform: translate(0,  0px); }
+  50%  { transform: translate(0, 15px); }
+  100%   { transform: translate(0, -0px); }    
+}

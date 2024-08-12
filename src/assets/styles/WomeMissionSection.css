@@ -1,0 +1,15 @@
+
+.desktop-bg-mission {
+    background-image: url("../images/Background_Landing.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+  
+.mobile-bg-mission {
+    background-image: url("../images/Mobile_Static_Background.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+  

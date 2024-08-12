@@ -1,0 +1,71 @@
+@keyframes slideInFromGap {
+    0% {
+      transform: translateY(-5px); /* Adjust this value to set the gap */
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideOutToGap {
+    0% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(-5px); /* Adjust this value to set the gap */
+      opacity: 0;
+    }
+  }
+  
+  .animate-slide-in {
+    animation: slideInFromGap 0.3s ease-in-out forwards;
+  }
+  
+  .animate-slide-out {
+    animation: slideOutToGap 0.3s ease-in-out forwards;
+  }
+
+  .airdrop-btn {
+    background: linear-gradient(90deg, #ff0471, #ffa938, #ff38eb, #38ff7c, #6c38ff, #ff0471, #ffa938);
+    background-size: 600%;
+    -webkit-animation: gradient 10s linear infinite;
+            animation: gradient 10s linear infinite;
+  }  
+  
+  @-webkit-keyframes gradient {
+    0% {
+      background-position: 100% 75%;
+    }
+    25% {
+      background-position: 76% 50%;
+    }
+    50% {
+      background-position: 51% 25%;
+    }
+    75% {
+      background-position: 25% 0%;
+    }
+    100% {
+      background-position: 0% 25%;
+    }
+  }
+  @keyframes gradient {
+    0% {
+      background-position: 100% 75%;
+    }
+    25% {
+      background-position: 76% 50%;
+    }
+    50% {
+      background-position: 51% 25%;
+    }
+    75% {
+      background-position: 25% 0%;
+    }
+    100% {
+      background-position: 0% 25%;
+    }
+  }
