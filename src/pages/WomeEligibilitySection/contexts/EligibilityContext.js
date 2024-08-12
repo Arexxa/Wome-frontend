@@ -13,7 +13,7 @@ export const EligibilityProvider = ({ children }) => {
   const checkAddress = async (address) => {
     setLoading(true);
     try {
-      const response = await fetch(`https://https://wome-backend-production.up.railway.app/api/check-address?address=${address}`);
+      const response = await fetch(`https://wome-backend-production.up.railway.app/api/check-address?address=${address}`);
       const result = await response.json();
       setCheckResult(result);
     } catch (error) {
